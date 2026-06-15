@@ -1,0 +1,9 @@
+﻿[SizeNS]
+Path=STEP-vertical.ani
+
+[Wait]
+Path=STEP-busy.ani
+
+[Crosshair]
+Path=STEP-precision.cur
+

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>lulu | player</title>
+        <meta name="description" content="lulu10tacles">
+        <link rel="stylesheet" href="lulu-player.css">
+        <script src="/lulu.js" defer></script>
+        
+        <!--        adds icon to tab-->
+        <link rel="icon" type="image/x-icon" href="/media/lulu-2d-game/lulu.gif">
+        
+<!--        mobile support-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <!--        shows icon on home screen iphone when saving to bookmark-->
+        <link rel="apple-touch-icon" href="/media/lulu-2d-game/lulu.gif">
+        
+        
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap" rel="stylesheet">
+
+
+    </head>
+    
+    <body>
+        
+            
+            <div class="speaker-dj-bg">
+                 <img src="/media/lulu-2d-game/lulu%20bg.png">
+            </div> 
+    
+            <div class="scrolling-bike">
+                 <marquee scrollamount=10>
+                     <img id="bike-gif" src="/media/lulu-2d-game/wheelz.gif">
+                </marquee>
+            </div> 
+        
+        
+            <div class="speaker-dj">
+<!--                <div class="track-select-center-box">-->
+                    <img id="speaker" src="/media/lulu-2d-game/speakerbxtch.gif">
+                    <img id="dj" src="/media/lulu-2d-game/Turntable.gif">
+                    <img id="speaker" src="/media/lulu-2d-game/speakerbxtch.gif">
+<!--                </div>-->
+            </div>
+        
+    
+
+
+
+        
+        <div class="track-select-center-box">
+            <div class="track-select-container">
+                <div class="track-select-bg">
+                    
+                    <div class="title-container">
+                        <h1>🐙トラック選択🐙</h1>
+                    </div>
+
+                    
+                    
+<!--
+                    <div class="track-select-grid">
+                        <img src="/media/lulu-2d-game/speakerbxtch.gif">
+                        <img src="/media/lulu-2d-game/Turntable.gif">
+                        <img src="/media/lulu-2d-game/speakerbxtch.gif">
+                    </div>
+-->
+                    
+                   <div class="track-select-grid"> 
+                       <div class="track-item">
+                            <img class="image pixelated" id="track-1-img" src="/media/mp3-lulu/not%20invited%20art.jpg" onclick="changeTrack1()">
+<!--                           <img class="image pixelated" src="/media/evian1_media/track-1-play.gif" onclick="changeTrack1()">-->
+                            <audio id="track-1-source">
+                              <source src="/media/mp3-lulu/1-not%20invited%20v6-5.mp3" type="audio/mpeg">
+                            </audio>                   
+                        </div>
+                        <div class="track-item">
+                            <img class="image pixelated" id="track-2-img" src="/media/mp3-lulu/Sex%20Wax%20art.png" onclick="changeTrack2()">                 
+                            <audio id="track-2-source">
+                              <source src="/media/mp3-lulu/2-SLAPBACK%20v4.mp3" type="audio/mpeg">
+                            </audio>  
+                        </div>
+                       <div class="track-item">
+                            <img class="image pixelated" id="track-3-img" src="/media/mp3-lulu/Sex%20Wax%20art.png" onclick="changeTrack3()"> 
+                            <audio id="track-3-source">
+                              <source src="/media/mp3-lulu/3-SEX%20WAX%20v2.mp3" type="audio/mpeg">
+                            </audio>  
+                        </div>
+                       <div class="track-item">
+                            <img class="image pixelated" id="track-4-img" src="/media/mp3-lulu/lulu10tacles%20art.png" onclick="changeTrack4()">
+                            <audio id="track-4-source">
+                              <source src="/media/mp3-lulu/4-top%20shelf%20bxtch%20v4.mp3" type="audio/mpeg">
+                            </audio>  
+                        </div>
+                      <div class="track-item">
+                            <img class="image pixelated" id="track-5-img" src="/media/mp3-lulu/lulu10tacles%20art.png" onclick="changeTrack5()">
+                          <audio id="track-5-source">
+                              <source src="/media/mp3-lulu/5-hard%20soft%20&%20wet.mp3" type="audio/mpeg">
+                            </audio> 
+                        </div>
+                       
+                       
+                     <div class="track-item">
+                            <img class="image pixelated" id="track-6-img" src="/media/mp3-lulu/lulu10tacles%20art.png" onclick="changeTrack6()">
+                          <audio id="track-6-source">
+                              <source src="/media/mp3-lulu/6-lulus%20welcome%20song.mp3" type="audio/mpeg">
+                            </audio> 
+                        </div>
+                       
+<!--
+                       <div id="download-button" class="track-item">
+                            <a href="https://www.lulu10tacles.com">
+                                <img class="image pixelated" src="/media/lulu-2d-game/wheelz.gif">
+                            </a>
+-->
+    <!--
+                            <button onclick="pauseAudio()" type="button">⏸</button>
+                            <button onclick="playAudio()" type="button">▶</button> 
+    -->
+<!--                       </div>-->
+                    </div>
+                    <div class="pause-play">
+                        <button onclick="pauseAudio()" type="button">⏸</button>
+                        <button onclick="playAudio()" type="button">▶</button> 
+                    </div>
+                    
+                    <div class="back-button">
+                        <button><a href=javascript:history.back()>⬅</a></button>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        
+
+         <div class="scrolling-text">
+             <marquee>
+                <h3>△ □ □ ○ ○ △ × △ □ ○ ○ ○ × × △ □ △ △ ○ × × × ○ ○ □ □ △ □ □ ○ ○ △ × △ □ ○ ○ ○ × × △ □ △ △ ○ × × × ○ ○ □ □ △ □ □ ○ ○ △ × △ □ ○ ○ ○ × × △ □ △ △ ○ × × × ○ ○ □ □ △ □ ○ × </h3>
+            </marquee>
+        </div> 
+             
+        <div class="hero-image">
+            <img src="/media/lulu-ipod/ipod%20u2%20front.png">
+        </div>
+        
+        <div class="scrolling-text">
+             <marquee>
+                <h3>△ □ □ ○ ○ △ × △ □ ○ ○ ○ × × △ □ △ △ ○ × × × ○ ○ □ □ △ □ □ ○ ○ △ × △ □ ○ ○ ○ × × △ □ △ △ ○ × × × ○ ○ □ □ △ □ □ ○ ○ △ × △ □ ○ ○ ○ × × △ □ △ △ ○ × × × ○ ○ □ □ △ □ ○ × </h3>
+            </marquee>
+        </div>
+        
+                
+        <div class="hero-image">
+            <img src="/media/other-lulu-media/not%20invited%20art.jpg">
+        </div>
+        
+        <div class="scrolling-text">
+             <marquee>
+                <h3>△ □ □ ○ ○ △ × △ □ ○ ○ ○ × × △ □ △ △ ○ × × × ○ ○ □ □ △ □ □ ○ ○ △ × △ □ ○ ○ ○ × × △ □ △ △ ○ × × × ○ ○ □ □ △ □ □ ○ ○ △ × △ □ ○ ○ ○ × × △ □ △ △ ○ × × × ○ ○ □ □ △ □ ○ × </h3>
+            </marquee>
+        </div>
+        
+        <p>© lulu10tacles 2026</p>
+
+    </body>
+</html>

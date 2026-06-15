@@ -1,0 +1,314 @@
+body {
+    background:linear-gradient(to top, black, #210200);
+    background-attachment: fixed;
+
+    color: white;
+    font-family: "DotGothic1", DotGothic16, monospace;
+    cursor:url(/media/dividebyzero%20normal.cur), auto;
+    
+/*        cursor:url(/media/dividebyzero%20normal.cur), pointer;*/
+
+}
+
+
+
+.dotgothic16-regular {
+  font-family: "DotGothic16", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+/*    https://fonts.google.com/specimen/DotGothic16*/
+}
+
+
+
+a {
+    color: darkred;
+
+                cursor:url(/media/dividebyzero%20normal.cur), pointer;
+
+}
+
+h1 {
+    text-align: center;
+}
+
+
+h3 {
+    font-size: 40px;
+    color: white;
+}
+
+.hero-image {
+    text-align: center;
+}
+
+.hero-image img {
+    width: 60%;
+}
+
+
+
+/*track grid*/
+
+
+.title-container {
+/*    background: rgb(60 0 20/ 0.8);*/
+    
+    text-align: center;
+/*    align-content: center;*/
+    width: 100%;
+    border-radius: 10px;
+/*
+    padding-top: 1px;
+    padding-bottom: 1px;
+*/
+/*    padding-left: 1px;*/
+}
+
+.track-select-center-box {
+    display: flex;
+    justify-content: center;
+    padding-top: 4%;
+    padding-bottom: 4%;
+}
+
+.track-select-container {
+/*    overflow: hidden;*/
+    
+/*    background-color: mediumpurple;*/
+        background-color: rgb(220 0 60/ 0.6);
+
+    width: 60%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+/*  border: 5px solid black; */
+    
+    outline: 8px ridge rgb(0 0 0 / 0.6);
+    border-radius: 2rem;
+    
+/*
+        outline: 8px inset black;
+border-radius: 2rem;
+*/
+    
+    z-index: 2;
+}
+
+
+.track-select-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    
+/*    grid-gap: 10px;*/
+/*    grid-template-rows: 2;*/
+    text-align: center;
+    padding-bottom: 5%;
+}
+.track-select-grid img{
+    width: 80%;
+/*        cursor:url("/media/dividebyzero%20normal-click.cur"), auto;*/
+
+}
+.track-item {
+    text-align: center;
+    perspective: 120px;	
+    
+}
+
+
+
+
+@keyframes rotateAnimation {
+    from {transform: rotateY(0deg);}
+	to {transform: rotateY(360deg);}
+}
+
+@keyframes none {
+    from {transform: rotateY(0deg);}
+	to {transform: rotateY(0deg);}
+}
+
+
+
+.speaker-dj {
+    width: 100%;
+    align-content: center;
+    text-align: center;
+    z-index: -1;
+}
+
+.speaker-dj-bg img {
+    width: 100%;
+    align-content: center;
+    text-align: center;
+    position: absolute;
+    z-index: -1;
+}
+
+
+.pixelated {
+  image-rendering: pixelated;
+}
+
+
+.pause-play {
+/*    display: flex;*/
+    align-content: center;
+    text-align: center;
+    padding-bottom: 2%;
+}
+
+
+.pause-play button {
+font-size: 20px;
+    width: 10%;
+    background-color: black;
+    color: red;
+    
+            cursor:url(/media/dividebyzero%20normal.cur), pointer;
+
+}
+
+.pause-play button:active {
+    background-color: darkred;
+    color: white;
+}
+
+
+.back-button button {
+    
+    color: white;
+    background-color: black;
+                cursor:url(/media/dividebyzero%20normal.cur), pointer;
+
+}
+
+
+.scrolling-bike {
+    position: absolute;
+    padding-top: 600px;
+    width: 100%;
+    z-index: 0;
+
+}
+
+
+/*hover animations*/
+.track-item:hover {
+    animation: glitch-1 2s infinite linear !important;
+}
+.pause-play button:hover {
+    animation: glitch-1 2s infinite linear !important;
+}
+/*glitch text animation*/
+@keyframes glitch-1 {
+    0%,
+    12%,
+    15%,
+    52%,
+    55%,
+    82%,
+    85%,
+    100% {
+      opacity: 1;
+      transform: scaleX(1) scaleY(1);
+    }
+
+    13% {
+      opacity: .8;
+      transform: scaleY(2);
+      color: #;
+    }
+
+    53% {
+      opacity: .8;
+      transform: scaleX(.7);
+      color: #;
+    }
+
+    83% {
+      opacity: 8;
+      transform: rotate(-10deg);
+      color: #;
+    }
+  }
+  @keyframes glitch-2 {
+    13% {
+      color: #;
+    }
+
+    53% {
+      color: #;
+    }
+
+    83% {
+      color: #;
+    }
+  }
+    
+
+
+
+
+
+
+/*mobile adjustments*/
+@media (max-width:700px){
+    body {
+        font-size:4vw;
+    }
+    
+    ul button {
+        width: 8em;
+/*        width: 100%;*/
+    }
+    
+    .yt-embed-holder {
+            width: 100%;
+    }
+    
+    .hero-image img {
+        width: 100%;
+    }
+    
+    .track-select-container {
+        width: 80%;
+        z-index: 1;
+        }
+    
+    .track-select-grid {
+        grid-template-columns: repeat(2, 1fr);
+        
+    }
+    
+    .track-select-grid img {
+        width: 100%;
+    }
+    
+    .title-container {
+            width: 100%;
+    }
+    
+    .pause-play button {
+/*font-size: 20px;*/
+        width: 35%;
+    }
+    
+    
+        #dj {
+        width: 40%;
+    }
+    
+        #speaker {
+        width: 25%;
+    }
+
+    
+    .scrolling-bike {
+    padding-top: 40px;
+
+}
+    
+}

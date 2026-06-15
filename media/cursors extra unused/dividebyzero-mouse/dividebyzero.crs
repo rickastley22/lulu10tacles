@@ -1,0 +1,45 @@
+﻿[UpArrow]
+Path=dividebyzero alternate.ani
+
+[Wait]
+Path=dividebyzero busy.ani
+
+[SizeNWSE]
+Path=dividebyzero diagonal 1.cur
+
+[SizeNESW]
+Path=dividebyzero diagonal 2.cur
+
+[NWPen]
+Path=dividebyzero handwriting.ani
+
+[Help]
+Path=dividebyzero help.cur
+
+[SizeWE]
+Path=dividebyzero horizontal.ani
+
+[Hand]
+Path=dividebyzero link.ani
+
+[SizeAll]
+Path=dividebyzero move.ani
+
+[Arrow]
+Path=dividebyzero normal.cur
+
+[Crosshair]
+Path=dividebyzero precision.cur
+
+[IBeam]
+Path=dividebyzero text.cur
+
+[No]
+Path=dividebyzero unavailable.ani
+
+[SizeNS]
+Path=dividebyzero vertical.ani
+
+[AppStarting]
+Path=dividebyzero working.ani
+
