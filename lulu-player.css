@@ -108,12 +108,13 @@ border-radius: 2rem;
 }
 .track-select-grid img{
     width: 80%;
-/*        cursor:url("/media/dividebyzero%20normal-click.cur"), auto;*/
+    padding-bottom: 10px;
+    padding-top: 10px;
 
 }
 .track-item {
     text-align: center;
-    perspective: 120px;	
+    perspective: 300px;	
     
 }
 
@@ -154,7 +155,6 @@ border-radius: 2rem;
 
 
 .pause-play {
-/*    display: flex;*/
     align-content: center;
     text-align: center;
     padding-bottom: 2%;
@@ -197,10 +197,25 @@ font-size: 20px;
 
 /*hover animations*/
 .track-item:hover {
-    animation: glitch-1 2s infinite linear !important;
+/*    animation: glitch-1 2s infinite linear !important;*/
+      animation: scaleLoop .5s ease-in-out infinite alternate !important;
+
 }
+
+@keyframes scaleLoop {
+  0% {
+    transform: scaleY(); /* Original size */
+  }
+  100% {
+    transform: scaleY(1.05);
+  }
+}
+
+
 .pause-play button:hover {
     animation: glitch-1 2s infinite linear !important;
+/*          animation: scaleLoop .5s ease-in-out infinite alternate !important;*/
+
 }
 /*glitch text animation*/
 @keyframes glitch-1 {
